@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Jリーグチャント集</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="oneline_bbs-master/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="oneline_bbs-master/assets/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="oneline_bbs-master/assets/css/form.css">
+  <link rel="stylesheet" href="oneline_bbs-master/assets/css/timeline.css">
+  <link rel="stylesheet" href="oneline_bbs-master/assets/css/main.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  </head>
+<body>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#page-top"><span class="strong-title"><i class="fas fa fa-futbol-o fa-spin animated"></i>  Jリーグチャント集   <i class="fas fa fa-futbol-o fa-spin animated"></i></span></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Bootstrapのcontainer -->
+  <div class="container">
+    <!-- Bootstrapのrow -->
+    <div class="row">
+
+      <!-- 画面左側 -->
+      <div class="col-md-3 content-margin-top">
+        <!-- form部分 -->
+        <form action="bbs.php" method="post">
+          <!-- clubname -->
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" name="clubname" class="form-control" id="validate-text" placeholder="clubname" required>
+              <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+          </div>
+          <!-- lylics -->
+          <div class="form-group">
+            <div class="input-group" data-validate="length" data-length="4">
+              <textarea type="text" class="form-control" name="lylics" id="validate-length" placeholder="lylics" required></textarea>
+              <span class="input-group-addon danger"> <span class="glyphicon glyphicon-remove"></span></span> 
+            </div>
+          </div>
+          <!-- <!- music-->
+          <div class="form-group">
+            <div class="input-group" data-validate="length" data-length="4">
+              <textarea type="text" class="form-control" name="music" id="validate-length" placeholder="music" required></textarea>
+              <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+          </div>
+          <!-- 投稿ボタン -->
+          <button type="submit" class="btn btn-primary col-xs-12" disabled>投稿</button>
+        </form>
+      </div>
+
+      <!-- 画面右側 -->
+      <div class="col-md-9 content-margin-top">
+        <div class="timeline-centered">
+          <article class="timeline-entry">
+              <div class="timeline-entry-inner">
+                  <div class="timeline-icon bg-success">
+                      <i class="entypo-feather"></i>
+                      <i class="fa fa-music fa-lg"></i>
+                  </div>
+                  <div class="timeline-label">
+                      <h2><a href="#">ガンバ大阪</a> <span></span></h2>
+                      <p>俺たちが　大阪さ　青と黒　俺らだけ</p>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/HywAFR5IlvA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </article>
+
+          <article class="timeline-entry begin">
+              <div class="timeline-entry-inner">
+                  <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                      <i class="entypo-flight"></i> +
+                  </div>
+              </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>
+
+
+

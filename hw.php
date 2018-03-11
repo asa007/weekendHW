@@ -124,11 +124,11 @@ $music=$_POST['music'];
                       <i class="entypo-feather"></i>
                       <i class="fa fa-music "></i>
                   </div>
-                  <div class="timeline-label">
-                      <h2><a href="#">ガンバ大阪</a> <span></span></h2>
+                  <!-- <div class="timeline-label"> -->
+                      <!-- <h2><a href="#">ガンバ大阪</a> <span></span></h2>
                       <p>俺たちが　大阪さ　青と黒　俺らだけ</p>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/HywAFR5IlvA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  </div>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/HywAFR5IlvA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                  <!-- </div> -->
 
 <?php 
 
@@ -161,7 +161,7 @@ while(1){
   $survey_line=[];
   $survey_line = "<div class='timeline-label label-sita'>
                     <h2>
-                      <a href='#'> $_clubname</h2>
+                      <a href='#'> $_clubname</a></h2>
                     <p>
                       $_lylics
                     </p>

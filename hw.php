@@ -122,7 +122,7 @@ $music=$_POST['music'];
               <div class="timeline-entry-inner">
                   <div class="timeline-icon bg-success">
                       <i class="entypo-feather"></i>
-                      <i class="fa fa-music fa-lg"></i>
+                      <i class="fa fa-music "></i>
                   </div>
                   <div class="timeline-label">
                       <h2><a href="#">ガンバ大阪</a> <span></span></h2>
@@ -170,6 +170,7 @@ while(1){
                     </p>
                   </div>";
     echo $survey_line;
+    echo "<br>";
 
 }
 
@@ -206,11 +207,10 @@ $dbh = null;
 
 
 
-
  <article class="timeline-entry begin">
               <div class="timeline-entry-inner">
-                  <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
-                      <i class="entypo-flight"></i> +
+                  <div class="timeline-icon bg-success" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                      <i class="entypo-flight"></i><i class="fas fa-angle-double-right"></i>
                   </div>
               </div>
           </article>
@@ -227,5 +227,7 @@ $dbh = null;
 
 </body>
 </html>
+
+
 
 

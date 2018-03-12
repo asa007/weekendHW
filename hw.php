@@ -120,10 +120,10 @@ $music=$_POST['music'];
         <div class="timeline-centered">
           <article class="timeline-entry">
               <div class="timeline-entry-inner">
-                  <div class="timeline-icon bg-success">
+                  <!-- <div class="timeline-icon bg-success">
                       <i class="entypo-feather"></i>
                       <i class="fa fa-music "></i>
-                  </div>
+                  </div> -->
                   <!-- <div class="timeline-label"> -->
                       <!-- <h2><a href="#">ガンバ大阪</a> <span></span></h2>
                       <p>俺たちが　大阪さ　青と黒　俺らだけ</p>
@@ -140,7 +140,7 @@ $dbh = new PDO($dsn, $user, $password);
 $dbh->query('SET NAMES utf8');
 
 // ２．SQL文を実行する
-$sql = 'SELECT * FROM `chants`';
+$sql = 'SELECT * FROM `chants` ORDER BY `id` DESC';
 $stmt = $dbh->prepare($sql);
 $stmt->execute();
 
@@ -159,7 +159,12 @@ while(1){
 
 
   $survey_line=[];
-  $survey_line = "<div class='timeline-label label-sita'>
+  $survey_line = "<div class='timeline-icon bg-success'>
+                      <i class='entypo-feather'></i>
+                      <i class='fa fa-music ''></i>
+                  </div>
+
+                    <div class='timeline-label label-sita'>
                     <h2>
                       <a href='#'> $_clubname</a></h2>
                     <p>
@@ -222,8 +227,9 @@ $dbh = null;
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <!--  Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/form.js"></script>
 
 </body>
 </html>
